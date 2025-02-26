@@ -1,5 +1,5 @@
 .container {
-  background-color: rgb(211, 244, 244);
+  background-color: rgb(207, 213, 213);
   width: 60vw;
   margin: 0 auto;
   padding: 1rem;
@@ -10,10 +10,31 @@
   text-align: center;
   height: 5rem;
   color: #fff;
-  background-color: rgb(22, 136, 66);
+  background-color: rgb(94, 174, 164);
   justify-content: center;
 }
 
+.table {
+  display: table;
+  table-layout: fixed;
+}
+.table td,
+.table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: rgba(154, 183, 186, 0.254);
+}
+.table tr:nth-child(even) {
+  background-color: rgba(236, 243, 244, 0.818);
+}
+
+@media (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
 * {
   box-sizing: border-box;
 }

@@ -1,0 +1,31 @@
+.todo {
+   &__titulo {
+   }
+}
+
+.table {
+   display: table;
+
+   table-layout: fixed;
+
+   td,
+   th {
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: rgba(154, 183, 186, 0.254);
+   }
+
+   tr:nth-child(even) {
+    background-color: rgba(236, 243, 244, 0.818);
+
+   }
+}
+
+
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
